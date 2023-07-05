@@ -24,70 +24,160 @@
 			  width: 40%;
 			}
 		p{font-family: "Fredoka One"}
+		.alinhar{
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	</style>
 	<title>Liacanju</title>
 </head>
 <body>
 
-<div class="w3-bar w3-border w3-purple">
-	<br>
-	<img src="https://cdn-icons-png.flaticon.com/512/3095/3095126.png" style="width:50px;height:50px;">
-	<h1 style="text-align:center;">Liacanju Floricultura</h1>
-	<h6 style="text-align:center;">Simbolizando os melhores momentos</h6>
-
-	<a style="font-family: Kalam; font-size: 20px;" href="Sobre.html" class="w3-bar-item w3-button w3-hover-pale-red w3-right">Sobre</a>
-
-</div>
-
-<div>
-	<span style="margin: auto;" class="w3-container w3-large">
-		<p style="font-size: 30px; border-style: solid; border-color: transparent; padding: 25px; background-color: rgb(229, 229, 229, 50%);">&#10024 Flores em destaque &#10024</p>
-	</span>
-	
-	<br>
-	<br>
-	<span class="w3-button w3-riple w3-hover-white" style="margin: 1px; padding: 0;">
-		<img src="https://static.vecteezy.com/system/resources/previews/017/222/227/original/pink-realistic-tulip-flowers-bouquet-png.png" style="width:250px;height:250px;">
-		<h3>Tulipas</h3>
-	</span>
-
-	<span class="w3-button w3-riple w3-hover-white" style="margin: 1px; padding: 0;">
-		<img src="https://static.vecteezy.com/system/resources/previews/009/667/946/non_2x/sunflower-bouquet-art-painting-free-png.png" style="width:250px;height:250px;">
-		<h3>Girassóis</h3>
-	</span>
-
-	<span class="w3-button w3-riple w3-hover-white" style="margin: 1px; padding: 0;">
-		<img src="https://assets.stickpng.com/images/580b585b2edbce24c47b2684.png" style="width:250px;height:250px;">
-		<h3>Orquídeas</h3>
-	</span>
-
-	<span class="w3-button w3-riple w3-hover-white" style="margin: 1px; padding: 0;">
-		<img src="https://i.pinimg.com/originals/a4/bb/ca/a4bbcad3a63b3c3c0063732b2c6218d6.gif" style="width:250px;height:250px;">
-		<h3>Lírios</h3>
-	</span>
-
-	<span class="w3-button w3-riple w3-hover-white" style="margin: 1px; padding: 0;">
-		<img src="https://static.vecteezy.com/system/resources/previews/009/667/955/original/rose-flower-bouquet-watercolor-for-valentine-free-png.png" style="width:250px;height:250px;">
-		<h3>Rosas</h3>
-	</span>
-
-	<br>
-	<br>
-	<br>
-
-	
-
-</div>
-
-<footer style="background-color: #f89bc0; width: 100%; height: 100%; padding: 1px;">
-	<div>
-		<p style="margin-left: 20px; margin-right: 20px;">Contato</p>
-		<p style="margin-left: 20px; margin-right: 20px;" class="fa fa-whatsapp"> (82)99647-6363</p>
+	<div class="w3-bar w3-border w3-purple">
 		<br>
-		<p style="margin-left: 20px; margin-right: 20px;" class="fa fa-envelope icon"> jwos3@aluno.ifal.edu.br</p>
-	</div>
-	<p style="text-align: center;">&copy; Jhully O. Todos os direitos reservados.</p>
+		<img src="https://cdn-icons-png.flaticon.com/512/3095/3095126.png" style="width:50px;height:50px;">
+		<h1 style="text-align:center;">Liacanju Floricultura</h1>
+		<h6 style="text-align:center;">Simbolizando os melhores momentos</h6>
 
-</footer>
+		<a style="font-family: Kalam; font-size: 20px;" href="Orçamento.html" class="w3-bar-item w3-button w3-hover-pale-red w3-right">Orçamento</a>
+		<a style="font-family: Kalam; font-size: 20px;" href="Sobre.html" class="w3-bar-item w3-button w3-hover-pale-red w3-right">Sobre</a>
+
+	</div>
+
+
+		<span style="margin: auto;" class="w3-container w3-large">
+			<p style="font-size: 30px; border-style: solid; border-color: transparent; padding: 25px; background-color: rgb(229, 229, 229, 50%);">&#10024 Flores em destaque &#10024</p>
+		</span>
+		
+		<br>
+		<br>
+		
+	<div class="alinhar">	
+		<span id="tulipas" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('infotulipas').style.display='block'; document.getElementById('tulipas').style.display='none'" style="margin: 1px; padding: 0; width:250px;height:250px;">
+			<img src="https://static.vecteezy.com/system/resources/previews/017/222/227/original/pink-realistic-tulip-flowers-bouquet-png.png" style="width:250px;height:250px;">
+			<h3>Tulipas</h3>
+		</span>
+
+	<span id="infotulipas" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('tulipas').style.display='block'; document.getElementById('infotulipas').style.display='none'" style="display: none; margin: 1px; padding: 0; width:250px;height:250px;">
+			<div style="width:250px;height:250px;">
+				<p style="font-size: 70%;">
+					As tulipas são flores clássicas e encantadoras<br>
+					que transmitem elegância e beleza. Com<br> 
+					suas pétalas suaves e vibrantes, as tulipas<br>
+					trazem uma aura de frescor e sofisticação para<br>
+					qualquer ambiente. Seja para presentear alguém<br>
+					especial ou decorar sua casa, as tulipas são<br>
+					a escolha perfeita para adicionar um toque de<br>
+					cor e vida. Sua variedade de tons e formas<br>
+					oferece uma infinidade de opções para expressar<br>
+					sentimentos como amor, gratidão e admiração. </p>
+			</div>
+		</span>
+
+		<span id="girassois" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('infogirassois').style.display='block'; document.getElementById('girassois').style.display='none'" style="margin: 1px; padding: 0; width:250px;height:250px;">
+			<img src="https://static.vecteezy.com/system/resources/previews/009/667/946/non_2x/sunflower-bouquet-art-painting-free-png.png" style="width:250px;height:250px;">
+			<h3>girassois</h3>
+		</span>
+
+		<span id="infogirassois" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('girassois').style.display='block'; document.getElementById('infogirassois').style.display='none'" style="display: none; margin: 1px; padding: 0; width:250px;height:250px;">
+			<div style="width:250px;height:250px;">
+				<p style="font-size: 70%;">
+					Os girassóis são como raios de sol que iluminam<br>
+					qualquer ambiente. Com sua natureza radiante e<br>
+					alegre, eles são uma escolha perfeita para trazer<br>
+					sorrisos e felicidade. Os girassóis representam a<br>
+					energia positiva, a vitalidade e a amizade. Suas<br>
+					grandes pétalas amarelas, que seguem o<br>
+					movimento do sol, simbolizam otimismo e<br>
+					resiliência. Adquira um buquê de girassóis para<br>
+					alegrar o dia de alguém especial ou para trazer<br>
+					um pouco de sol e brilho para sua própria vida </p>
+			</div>
+		</span>
+
+		<span id="orquideas" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('infoorquideas').style.display='block'; document.getElementById('orquideas').style.display='none'" style="margin: 1px; padding: 0; width:250px;height:250px;">
+			<img src="https://assets.stickpng.com/images/580b585b2edbce24c47b2684.png" style="width:250px;height:250px;">
+			<h3>orquideas</h3>
+		</span>
+
+		<span id="infoorquideas" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('orquideas').style.display='block'; document.getElementById('infoorquideas').style.display='none'" style="display: none; margin: 1px; padding: 0; width:250px;height:250px;">
+			<div style="width:250px;height:250px;">
+				<p style="font-size: 70%;">
+					As orquídeas são flores verdadeiramente<br>
+					fascinantes e elegantes, conhecidas por sua<br>
+					beleza exótica e requinte. Com uma variedade<br>
+					de cores e formas, as orquídeas são a<br>
+					personificação da elegância e do bom gosto.<br>
+					Seu porte gracioso e suas pétalas delicadas<br>
+					criam uma atmosfera de luxo e serenidade.<br>
+					Presentear alguém com uma orquídea é<br>
+					transmitir uma mensagem de apreciação,<br>
+					admiração e desejo de felicidade duradoura.<br>
+					Surpreenda-se com a beleza etérea das orquídeas.</p>
+			</div>
+		</span>
+
+		<span id="lirios" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('infolirios').style.display='block'; document.getElementById('lirios').style.display='none'" style="margin: 1px; padding: 0; width:250px;height:250px;">
+			<img src="https://i.pinimg.com/originals/a4/bb/ca/a4bbcad3a63b3c3c0063732b2c6218d6.gif" style="width:250px;height:250px;">
+			<h3>lirios</h3>
+		</span>
+
+		<span id="infolirios" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('lirios').style.display='block'; document.getElementById('infolirios').style.display='none'" style="display: none; margin: 1px; padding: 0; width:250px;height:250px;">
+			<div style="width:250px;height:250px;">
+				<p style="font-size: 70%;">
+					Os lírios são flores majestosas e imponentes<br>
+					que conquistam com sua beleza exuberante e<br>
+					fragrância envolvente. Com suas pétalas<br>
+					elegantes e suas cores vibrantes, os lírios são<br>
+					uma escolha perfeita para impressionar e cativar.<br>
+					Eles simbolizam pureza, renovação e amor<br>
+					incondicional. Seja para celebrar uma ocasião<br>
+					especial ou para expressar condolências, um<br>
+					buquê de lírios é uma maneira significativa de<br>
+					transmitir sentimentos profundos e duradouros.</p>
+			</div>
+		</span>
+
+		<span id="rosas" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('inforosas').style.display='block'; document.getElementById('rosas').style.display='none'" style="margin: 1px; padding: 0; width:250px;height:250px;">
+			<img src="https://static.vecteezy.com/system/resources/previews/009/667/955/original/rose-flower-bouquet-watercolor-for-valentine-free-png.png" style="width:250px;height:250px;">
+			<h3>rosas</h3>
+		</span>
+
+		<span id="inforosas" class="w3-button w3-riple w3-hover-white" onclick="document.getElementById('rosas').style.display='block'; document.getElementById('inforosas').style.display='none'" style="display: none; margin: 1px; padding: 0; width:250px;height:250px;">
+			<div style="width:250px;height:250px;">
+				<p style="font-size: 70%;">
+					As rosas são clássicas e atemporais, conhecidas<br>
+					em todo o mundo como símbolos do amor e da<br>
+					paixão.Com suas pétalas delicadas e aromáticas,<br>
+					as rosas têm o poder de encantar e seduzir.<br>
+					Disponíveis em uma ampla gama de cores, cada<br>
+					uma com seu próprio significado, as rosas permitem<br>
+					que você expresse seus sentimentos de maneira<br>
+					única. Seja para surpreender um ente querido ou<br>
+					para criar uma atmosfera romântica, as rosas são<br>
+					sempre uma escolha infalível.</p>
+			</div>
+		</span>
+
+		<br>
+		<br>
+		<br>
+
+		
+
+	</div>
+
+	<footer style="background-color: #f89bc0; width: 100%; height: 100%; padding: 1px;">
+		<div>
+			<p style="margin-left: 20px; margin-right: 20px;">Contato</p>
+			<p style="margin-left: 20px; margin-right: 20px;" class="fa fa-whatsapp"> (82)99647-6363</p>
+			<p style="margin-left: 20px; margin-right: 20px;" class="fa fa-envelope icon"> jwos3@aluno.ifal.edu.br</p>
+		</div>
+		<p style="text-align: center;">&copy; Jhully O. Todos os direitos reservados.</p>
+
+	</footer>
 </body>
 </html>
